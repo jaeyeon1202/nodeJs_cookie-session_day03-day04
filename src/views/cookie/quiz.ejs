@@ -1,0 +1,13 @@
+
+
+<h3>quiz 페이지 입니다.</h3>
+<% console.log( "cookie : ", userCookie ) %>
+<% if(userCookie == undefined ){ %>
+    <script>
+            const opt = "width=300, height=200, top=500, left=500";
+            window.open("/cookie/quiz_popup", "", opt);
+    </script>
+<% }else{ %>
+    쿠키
+<% } %>
+
