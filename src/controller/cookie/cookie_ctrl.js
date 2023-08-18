@@ -7,7 +7,7 @@ const cookieConfig ={
 
 const index = (req, res) =>{
     //사용자 요청으로 부터 쿠키 가져오기(req.cookies.변수이름)
-    let userCookie = req.signedCookies.myCookie;
+    let userCookie = req.cookies.myCookie;
     //새로고침(새로 요청하면)하면 쿠키값 생김
     console.log("req.cookies");
     // => 위 코드는 오류가 난다. 최초에 요청을 하면 쿠키값이 없기 때문에
